@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Carla Bruckmann" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/layout/favicon/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/ico" sizes="16x16" href="./favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/layout/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/layout/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/layout/favicon/site.webmanifest" />
+    <title>Carla Bruckmann</title>
+  </head>
+  <body>
+    <header>
+      <section class="wrapper-header d-flex-row">
+        <section class="logo d-flex-row">
+          <div class="wrapper-lines-logo">
+            <hr class="custom-line-1" />
+            <hr class="custom-line-2" />
+          </div>
+          <span>Carla Bruckmann</span>
+        </section>
+        <section class="d-flex-row">
+          <nav class="icon d-flex-row">
+            <div class="icon-menu">
+              <span>menu</span>
+            </div>
+            <div class="icon-p">
+              <div class="p-1"></div>
+              <div class="p-2"></div>
+              <div class="p-3"></div>
+            </div>
+          </nav>
+          <nav id="navbar" class="menu">
+            <ul>
+              <li><a class="nav-link" href="#welcome-section">Home</a></li>
+              <hr class="custom-line-3" />
+              <li>
+                <a class="nav-link" href="#about-section">Who Am I?</a>
+              </li>
+              <hr class="custom-line-3" />
+              <li>
+                <a class="nav-link" href="#projects">My Projects</a>
+              </li>
+              <hr class="custom-line-3" />
+              <li><a class="nav-link" href="#contacts-section">Contacts</a></li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <section id="title-welcome-section" class="d-flex-column">
+          <div class="wrapper-title-welcome-section d-flex-column">
+            <h1>Hello!</h1>
+            <div class="d-flex-row">
+              <p>I am</p>
+              <h2>Carla,</h2>
+            </div>
+            <h3>Junior Front-End Developer.</h3>
+          </div>
+        </section>
+        <section id="waves">
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </section>
+      </section>
+      <section id="about-section" class="d-flex-column">
+        <section id="title-about-section" class="d-flex-column title-section">
+          <h2>Who am I?</h2>
+        </section>
+        <section id="text-about-section">
+          <p>
+            Web development student focused on creating beautiful and responsive
+            websites. <br />
+            <br />Concluded courses in Programming Logic, HTML, CSS3, and
+            javascript on Digital Innovation One platform and currently trilling
+            the Responsive Web Design Certification on freeCodeCamp.
+            <br />Pursuing a career in web development because coding became a
+            new passion in life. <br />
+            <br />Commited, management experienced, and with fast learning.
+            Always delivering the best on every job.
+          </p>
+        </section>
+      </section>
+      <section id="projects">
+        <section
+          id="title-projects-section"
+          class="d-flex-column title-section"
+        >
+          <p>These are some of</p>
+          <h2>My Projects</h2>
+        </section>
+        <section id="cards">
+          <div id="list-projects"></div>
+        </section>
+      </section>
+    </main>
+    <footer id="contacts-section">
+      <section id="title-contacts-section" class="d-flex-column title-section">
+        <p>Let's do something</p>
+        <h2>Amazing</h2>
+      </section>
+      <section class="contacts d-flex-row">
+        <div class="contact-section contact-section-style1 d-flex-column">
+          <div class="text-contact-section">
+            <h3>
+              Feel free to get in touch with me. I am always open to discussing
+              new projects, creative ideas or opportunities to be part of your
+              visions.
+            </h3>
+          </div>
+          <section class="title-section">
+            <h3>You can find me here:</h3>
+          </section>
+          <div class="network-icons d-flex-row">
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/in/carla-bruckmann-271576ba/"
+              class="fab fa-linkedin"
+              target="_blank"
+            ></a>
+            <a
+              title="Whatsapp"
+              href="https://api.whatsapp.com/send?phone=5500000000000&text=Enter%20your%20message."
+              class="fab fa-whatsapp-square"
+              target="_blank"
+            >
+            </a>
+            <a
+              title="Email"
+              href="mailto:email@email.com&text=Enter%20your%20message."
+              class="fas fa-envelope-square"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </div>
+        <div class="contact-section contact-section-style2 d-flex-column">
+          <section class="title-section">
+            <h3>You can drop me a message:</h3>
+          </section>
+          <form id="form">
+            <div class="form-name d-flex-column">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                class="font-form"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-email d-flex-column">
+              <label id="email-label" for="email">Email Address</label>
+              <input
+                type="email"
+                class="font-form"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <div class="form-message d-flex-column">
+              <label for="message" class="message-label">Message</label>
+              <textarea
+                class="font-form"
+                name="message"
+                id="message"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <div class="form-button d-flex-row">
+              <button id="submit" class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="logo d-flex-row">
+        <div class="wrapper-lines-logo">
+          <hr class="custom-line-1" />
+          <hr class="custom-line-2" />
+        </div>
+        <span>Carla Bruckmann - 2021</span>
+      </section>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/ec6c9f4d17.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/projects.js"></script>
+  </body>
+</html>

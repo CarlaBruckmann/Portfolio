@@ -1,0 +1,220 @@
+:root {
+  --transition: 0.4s ease all;
+}
+
+@media screen and (min-width: 2000px) {
+  #welcome-section .waves {
+    margin-top: 93vh;
+    transition: var(--transition);
+  }
+  #about-section:after,
+  footer:before {
+    background-repeat: repeat;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #projects #cards .text-projects-section {
+    margin-right: 15%;
+    transition: var(--transition);
+  }
+}
+@media screen and (max-width: 1200px) {
+  #welcome-section .waves {
+    margin-top: 89vh;
+    transition: var(--transition);
+  }
+  #projects #title-projects-section,
+  footer #title-contacts-section {
+    padding-top: 250px;
+    transition: var(--transition);
+  }
+  #projects #cards .text-projects-section {
+    margin-right: 10%;
+    transition: var(--transition);
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer .contacts {
+    flex-direction: column;
+  }
+  footer .contacts .contact-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #welcome-section #title-welcome-section {
+    top: 35%;
+    transition: var(--transition);
+  }
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section h1 {
+    font-size: 60px;
+    transition: var(--transition);
+  }
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section p {
+    font-size: 42px;
+    transition: var(--transition);
+  }
+  .title-section h2,
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section h2,
+  #projects #cards .project-tile h4 {
+    font-size: 42px;
+    transition: var(--transition);
+  }
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section h3 {
+    font-size: 30px;
+    transition: var(--transition);
+  }
+  #welcome-section .waves {
+    height: 50px;
+    min-height: 50px;
+    margin-top: 96vh;
+    transition: var(--transition);
+  }
+  #about-section #text-about-section p,
+  .title-section p,
+  .text-projects-section a,
+  #projects #cards .project-tile p,
+  #projects #cards .wrapper-card .buttons-card .btn a,
+  footer .contacts .contact-section form label,
+  footer .contacts .contact-section form input,
+  footer .contacts .contact-section form textarea,
+  button {
+    font-size: 24px;
+    transition: var(--transition);
+  }
+  #projects #title-projects-section,
+  footer #title-contacts-section {
+    padding-top: 200px;
+  }
+
+  .wrapper-header .menu a,
+  .title-section h3,
+  .text-contact-section h3,
+  .text-projects-section h3 {
+    font-size: 28px;
+    transition: var(--transition);
+  }
+}
+@media screen and (max-width: 540px) {
+  .wrapper-header .menu {
+    width: 37vh;
+    transition: var(--transition);
+  }
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section h1 {
+    font-size: 55px;
+    transition: var(--transition);
+  }
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section p {
+    font-size: 38px;
+    transition: var(--transition);
+  }
+  .title-section h2,
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section h2,
+  #projects #cards .project-tile h4 {
+    font-size: 38px;
+    transition: var(--transition);
+  }
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section h3 {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 15px 0 15px;
+    transition: var(--transition);
+  }
+  #welcome-section .waves {
+    margin-top: 95vh;
+    transition: var(--transition);
+  }
+  .wrapper-header .menu a,
+  #about-section #text-about-section p,
+  .title-section p,
+  .text-projects-section a,
+  #projects #cards .text-projects-section ul li::before,
+  #projects #cards .project-tile p,
+  #projects #cards .wrapper-card .buttons-card .btn a,
+  footer .contacts .contact-section form label,
+  footer .contacts .contact-section form input,
+  footer .contacts .contact-section form textarea,
+  button {
+    line-height: 30px;
+    font-size: 20px;
+    transition: var(--transition);
+  }
+  #projects #title-projects-section,
+  footer #title-contacts-section {
+    padding-top: 150px;
+    transition: var(--transition);
+  }
+  .title-section h3,
+  .text-contact-section h3,
+  .text-projects-section h3 {
+    font-size: 24px;
+    transition: var(--transition);
+  }
+  .text-contact-section h3,
+  .text-projects-section h3 {
+    line-height: 30px;
+  }
+  .btn {
+    width: 130px;
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-2 {
+    margin: 30px 10px 30px 10px;
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-1 {
+    margin: 30px 10px 30px 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper-header {
+    margin: 10px 15px;
+    transition: var(--transition);
+  }
+  .wrapper-header .icon-menu {
+    display: none;
+  }
+  .wrapper-header .icon .icon-p {
+    padding: 22px 0 20px 5px;
+  }
+  .wrapper-header .menu li {
+    padding: 10px;
+  }
+  .wrapper-header .menu a {
+    padding: 10px;
+  }
+  #welcome-section #title-welcome-section {
+    top: 40%;
+    transition: var(--transition);
+  }
+  #welcome-section .waves {
+    margin-top: 94.5vh;
+    transition: var(--transition);
+  }
+
+  #projects #cards .text-projects-section {
+    margin-right: 10px;
+  }
+  .wrapper-header .menu a {
+    font-size: 18px;
+    transition: var(--transition);
+  }
+  .title-section h3,
+  .text-contact-section h3,
+  .text-projects-section h3 {
+    font-size: 22px;
+    transition: var(--transition);
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-2 {
+    margin: 30px 5px 30px 10px;
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-1 {
+    margin: 30px 5px 30px 20px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #projects #cards .wrapper-card .buttons-card .btn-1 {
+    margin: 30px 5px 30px 10px;
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-2 {
+    margin: 30px 5px 30px 5px;
+  }
+}
