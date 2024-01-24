@@ -505,7 +505,21 @@ footer .contacts .contact-section .text-contact-section {
 footer .contacts .contact-section form .form-button {
   justify-content: center;
 }
-
+footer .contacts .contact-section #submit {
+  border: var(--border);
+  font-size: 25px;
+  padding: 5px 10px;
+  width: 130px;
+  border-radius: 30px;
+  background-color: var(--button-color);
+  color: var(--white);
+  cursor: pointer;
+}
+footer .contacts .contact-section #submit:hover {
+  background-color: var(--white);
+  color: var(--button-color);
+  transition: var(--transition);
+}
 footer .contacts .contact-section .network-icons a {
   font-size: 50px;
   color: var(--white-light-font);
