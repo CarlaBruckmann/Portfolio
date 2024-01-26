@@ -371,7 +371,7 @@ hr {
 #projects #cards {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0 10%;
 }
 
@@ -389,11 +389,11 @@ hr {
   margin-top: 30px;
 }
 #projects #cards .project-tile h4 {
-  font-size: 48px;
+  font-size: 44px;
 }
 #projects #cards .project-tile p {
   margin: 5px 0 0 10px;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 #projects #cards .wrapper-card {
@@ -451,14 +451,13 @@ button:hover {
   margin: 10px 30px 20px 0;
 }
 
-#projects #cards .wrapper-card .img-card {
+#projects #cards .wrapper-card img {
   border: var(--border);
+  width: 100%;
+  height: auto;
   border-radius: 45px;
   overflow: hidden;
   cursor: default;
-}
-#projects #cards .wrapper-card .img-card img {
-  width: 100%;
 }
 
 footer:before {

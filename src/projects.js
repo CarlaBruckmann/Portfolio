@@ -1,50 +1,114 @@
 const projects = [
   {
+    title: "Bruma",
+    text: "Landing Page",
+    description: "Wix",
+    img: "assets/img/img-cards/BrigaderiaBruma.png",
+    link_live: "https://www.brigaderiabruma.com.br/",
+    link_code: "",
+  },
+  {
+    title: "Carrot",
+    text: "Landing Page",
+    description: "HTML5, CSS3 and JavaScript",
+    img: "assets/img/img-cards/CarrotFarm.png",
+    link_live:
+      "https://carlabruckmann.github.io/product-landing-page-FreeCodeCamp/",
+    link_code:
+      "https://github.com/CarlaBruckmann/product-landing-page-FreeCodeCamp",
+  },
+  {
+    title: "Black Friday",
+    text: "Landing Page",
+    description: "HTML, CSS and JavaScript",
+    img: "assets/img/img-cards/BlackFriday.png",
+    link_live: "https://carlabruckmann.github.io/landingPage-HiringCoders/",
+    link_code: "https://github.com/CarlaBruckmann/landingPage-HiringCoders",
+  },
+  {
     title: "Survey Form",
     text: "Form",
-    description: "HTML, CSS e JavaScript",
-    img: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true",
-    link_live: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp",
+    description: "HTML5 and CSS3",
+    img: "assets/img/img-cards/SurveyForm.png",
+    link_live: "https://carlabruckmann.github.io/survey-form-FreeCodeCamp/",
     link_code: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp",
   },
   {
-    title: "hahahah",
-    text: "ihu",
-    description: "HTML, CSS e JavaScript",
-    img: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true",
-    link_live: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp",
+    title: "Let's Dev",
+    text: "Project",
+    description: "ReactJs, TypeScript, HTML5, CSS3, Vite and API",
+    img: "assets/img/img-cards/LetsDev.png",
+    link_live: "",
+    link_code:
+      "https://github.com/CarlaBruckmann/projeto-de-conclusao_frontend_lets-dev",
   },
   {
-    title: "Survey Form",
-    text: "Form",
-    description: "HTML, CSS e JavaScript",
-    img: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true",
-    link_code: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp",
+    title: "GamaGit",
+    text: "Project",
+    description: "ReactJs and API",
+    img: "assets/img/img-cards/GamaGit.png",
+    link_live: "",
+    link_code: "https://github.com/CarlaBruckmann/React-GamaGit",
   },
   {
-    title: "hahahah",
-    text: "ihu",
-    description: "HTML, CSS e JavaScript",
-    img: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true",
+    title: "Management",
+    text: "System",
+    description: "Bulma, HTML5, CSS3 and JavaScript",
+    img: "assets/img/img-cards/GestãoDeCadastros.png",
+    link_live:
+      "https://carlabruckmann.github.io/GestaoDeCadastros-HiringCoders/",
+    link_code:
+      "https://github.com/CarlaBruckmann/GestaoDeCadastros-HiringCoders",
   },
   {
-    title: "Survey Form",
-    text: "Form",
-    description: "HTML, CSS e JavaScript",
-    img: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true",
+    title: "Vought",
+    text: "System",
+    description: "VueJs",
+    img: "assets/img/img-cards/Relatorio.png",
+    link_live: "https://jazztech-test.netlify.app/",
+    link_code: "https://github.com/CarlaBruckmann/jazztech-test",
   },
   {
-    title: "hahahah",
-    text: "ihu",
-    description: "HTML, CSS e JavaScript",
-    img: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true",
-    link_code: "https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp",
+    title: "Documentation",
+    text: "Page",
+    description: "HTML5, CSS3, CSS Houdini and JavaScript",
+    img: "assets/img/img-cards/Documentacao.png",
+    link_live:
+      "https://carlabruckmann.github.io/technical-documentation-page-FreeCodeCamp/",
+    link_code:
+      "https://github.com/CarlaBruckmann/technical-documentation-page-FreeCodeCamp",
+  },
+  {
+    title: "SoundTracx",
+    text: "Page",
+    description: "HTML5, CSS3, JavaScript and jQuery",
+    img: "assets/img/img-cards/SoundTracx.png",
+    link_live: "https://carlabruckmann.github.io/soundtracx/",
+    link_code: "https://github.com/CarlaBruckmann/soundtracx",
+  },
+  {
+    title: "IgniteLab Event",
+    text: "Page",
+    description:
+      "ReactJs, Vite, TypeScript, TailwindCSS, GraphQL, Apollo Client, GraphCMS and GraphQL CodeGen",
+    img: "assets/img/img-cards/IgniteEvent.png",
+    link_live: "",
+    link_code:
+      "https://github.com/CarlaBruckmann/eventPlataform-IgniteLab-Rocketseat",
+  },
+  {
+    title: "To-do",
+    text: "List",
+    description: "ReactJs, Axios and API",
+    img: "assets/img/img-cards/ListaDeTarefas.png",
+    link_code:
+      "https://github.com/CarlaBruckmann/ListaDeTarefas-React-DicasParaDevs",
   },
 ];
 const cardProjects = document.querySelector("#list-projects");
 projects.forEach((project) => {
   console.log(project.title);
-  if (project.link_code === undefined && project.link_live === undefined) {
+  if (!project.link_code && !project.link_live) {
     cardProjects.innerHTML += `
      <div class="item">
         <section class="project-tile d-flex-row">
@@ -55,16 +119,13 @@ projects.forEach((project) => {
              <div class="buttons-card d-flex-row">
             </div>
             <div class="wrapper-description">
-                <p class="project-description">Tecnologias: ${project.description}.</p>
+                <p class="project-description">Role: ${project.description}.</p>
             </div>
-            <div class="img-card">
-                <img src= ${project.img}
-          alt="">
-            </div>
+                <img src=${project.img}>
         </section>
         </div>
     `;
-  } else if (project.link_live === undefined) {
+  } else if (!project.link_live) {
     cardProjects.innerHTML += `
     <div class="item">
     <section class="project-tile d-flex-row">
@@ -78,16 +139,13 @@ projects.forEach((project) => {
             </button>
         </div>
         <div class="wrapper-description">
-            <p class="project-description">Tecnologias: ${project.description}.</p>
+            <p class="project-description">Role: ${project.description}.</p>
         </div>
-        <div class="img-card">
-            <img src= ${project.img}
-      alt="">
-        </div>
+            <img src=${project.img}>
     </section>
     </div>
 `;
-  } else if (project.link_code === undefined) {
+  } else if (!project.link_code) {
     cardProjects.innerHTML += `
      <div class="item">
         <section class="project-tile d-flex-row">
@@ -101,12 +159,9 @@ projects.forEach((project) => {
                 </button>
             </div>
             <div class="wrapper-description">
-                <p class="project-description">Tecnologias: ${project.description}.</p>
+                <p class="project-description">Role: ${project.description}.</p>
             </div>
-            <div class="img-card">
-                <img src= ${project.img}
-          alt="">
-            </div>
+                <img src=${project.img}>
         </section>
         </div>
     `;
@@ -127,12 +182,9 @@ projects.forEach((project) => {
                 </button>
             </div>
             <div class="wrapper-description">
-                <p class="project-description">Tecnologias: ${project.description}.</p>
+                <p class="project-description">Role: ${project.description}.</p>
             </div>
-            <div class="img-card">
-                <img src= ${project.img}
-          alt="">
-            </div>
+                <img src=${project.img}>
         </section>
         </div>
     `;
