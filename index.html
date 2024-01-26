@@ -203,30 +203,32 @@
             <h3>You can drop me a message:</h3>
           </section>
           <form
-            id="form"
+            id="fs-frm"
+            name="contact-form"
+            accept-charset="utf-8"
             action="https://formspree.io/f/mzbndkpg"
-            method="POST"
+            method="post"
           >
             <div class="form-name d-flex-column">
-              <label id="name-label" for="name">Name</label>
+              <label for="name">Name</label>
               <input
                 type="text"
                 class="font-form"
                 name="name"
                 id="name"
                 placeholder="Enter your name"
-                required
+                required=""
               />
             </div>
             <div class="form-email d-flex-column">
-              <label id="email-label" for="email">Email Address</label>
+              <label for="email">Email Address</label>
               <input
                 type="email"
                 class="font-form"
-                name="email"
+                name="_replyto"
                 id="email"
                 placeholder="Enter your email address"
-                required
+                required=""
               />
             </div>
             <div class="form-message d-flex-column">
@@ -238,6 +240,12 @@
                 placeholder="Enter your message"
               ></textarea>
             </div>
+            <input
+              type="hidden"
+              name="_subject"
+              id="email-subject"
+              value="Contact Form Submission"
+            />
             <div class="form-button d-flex-row">
               <input id="submit" type="submit" value="Submit" />
             </div>
