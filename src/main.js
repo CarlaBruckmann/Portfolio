@@ -1,22 +1,3 @@
-// menu //
-function initMenu() {
-  let icon = document.querySelector(".icon");
-  let menu = document.querySelector(".menu");
-  let menuLi = document.querySelectorAll(".menu li");
-
-  function menuHamburguer() {
-    icon.classList.toggle("icon-x");
-    menu.classList.toggle("ativo");
-  }
-
-  icon.addEventListener("click", menuHamburguer);
-  menuLi.forEach((item) => {
-    item.addEventListener("click", menuHamburguer);
-  });
-}
-
-initMenu();
-
 // houdini //
 (async function () {
   // Polyfill for older browsers//
@@ -29,3 +10,14 @@ initMenu();
     "https://unpkg.com/curved-line@1.0.0/curved-line.js"
   );
 })();
+
+var menuUL = document.getElementsByTagName("ul");
+var heightOful = menuUL[0].scrollHeight;
+var btnToggle = document.getElementsByClassName("btn-toggle");
+btnToggle[0].addEventListener("click", function () {
+  if (menuUL[0].style.maxHeight) {
+    menuUL[0].style.maxHeight = null;
+  } else {
+    menuUL[0].style.maxHeight = menuUL[0].scrollHeight + "px";
+  }
+});
