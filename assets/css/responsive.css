@@ -39,9 +39,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  nav {
+    width: 100%;
+  }
   .wrapper-header {
     margin-top: 15px;
-    align-items: start;
+  }
+  .wrapper-header .logo {
+    display: none;
   }
   ul li {
     width: 100%;
@@ -74,7 +79,6 @@
   }
   #welcome-section #title-welcome-section .wrapper-title-welcome-section h1 {
     font-size: 60px;
-
     transition: var(--transition);
   }
   #welcome-section #title-welcome-section .wrapper-title-welcome-section p {
@@ -128,22 +132,21 @@
 
 @media screen and (max-width: 540px) {
   #welcome-section #title-welcome-section .wrapper-title-welcome-section h1 {
-    font-size: 55px;
+    font-size: 50px;
     transition: var(--transition);
   }
   #welcome-section #title-welcome-section .wrapper-title-welcome-section p {
-    font-size: 38px;
+    font-size: 30px;
     transition: var(--transition);
   }
   .title-section h2,
   #welcome-section #title-welcome-section .wrapper-title-welcome-section h2,
   #projects #cards .project-tile h4 {
-    font-size: 38px;
+    font-size: 30px;
     transition: var(--transition);
   }
   #welcome-section #title-welcome-section .wrapper-title-welcome-section h3 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 20px;
     padding: 0 15px 0 15px;
     transition: var(--transition);
   }
